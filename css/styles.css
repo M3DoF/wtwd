@@ -9,6 +9,41 @@ html {
  -o-background-size: cover;
  background-size: cover;
 }
+
+.intro {
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.intro::after {
+    content:"";
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.2);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.video {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 56.25%;
+}
+
+.video_media {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 table {
     table-layout: fixed;
     text-align: center;
@@ -79,17 +114,26 @@ body {
 }
 
 .wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    
     min-height: 100%;
     display: flex;
     flex-direction: column;
 
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px); 
+   
+    backdrop-filter: blur(0px); 
     
 }
 
+
+
 .main {
     width: 100%;
+    height: 100%;
     padding: 30px;
     flex: 1 1 auto;
 }
@@ -117,17 +161,63 @@ nav a {
 }
 
 main {
-    min-width: 50%;
-    max-width: 50%;
+    min-width: 65%;
+    max-width: 65%;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: rgba(26, 26, 26, 0.95) ;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.pmain{
-    text-align: center;
+.prmain {
+    
+        min-width: 65%;
+        max-width: 65%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.95) ;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
 }
+
+
+.pmain{
+    color: white;
+    text-align: center;
+    padding: 2px;
+}
+
+.pmain1{
+    color: white;
+    text-align: left;
+    padding: 2px;
+    margin-left: 50px;
+}
+
+.pmainabout{
+    color: white;
+    text-align: left;
+    padding: 2px;
+}
+
+.pract{
+    color: white;
+    padding: 2px;
+}
+
+
+a {
+    color: #14a9f3; /* Колір тексту по замовчуванню */
+    text-decoration: none; /* Видалити підкреслення посилань */
+    transition: color 0.3s; /* Плавне переход для кольору тексту */
+}
+a:hover {
+    color: #f52c09f9; /* Змініть колір тексту при наведенні миші */
+}
+a:active {
+    background-color: #fcfcfc29; /* Змініть фон посилання при кліку */
+}
+
 
 h1, h2 {
     color: #1ebb5a;
