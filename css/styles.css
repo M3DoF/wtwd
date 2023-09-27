@@ -1,6 +1,6 @@
 html {
  height: 100%;
- background-image: url(../background.jpeg);
+ background-image: url(../images/background.jpeg);
  background-repeat: no-repeat;
  background-position: center center;
  background-attachment: fixed;
@@ -9,6 +9,63 @@ html {
  -o-background-size: cover;
  background-size: cover;
 }
+table {
+    table-layout: fixed;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 1px;
+    margin-bottom: 15px;
+
+    
+}
+th {
+    background-color: rgba(225, 250, 3, 0.946);
+    padding: 3px;
+    height: 35px;
+}
+
+td {
+    height: 150px;
+    padding: 3px;
+    font-size: 13px;
+    text-align: center;
+   
+   
+    
+}
+
+
+
+.conlk{
+    border: 2px solid #f6c41185; /* Товщина, стиль та колір рамки */
+    background-color: #faee107d;
+    padding: 3px; /* Відступ всередині рамки */
+}
+.conlk:not(:last-child) {
+    margin-bottom: 3px;
+}
+
+.conPz{
+    border: 2px solid #12db1c85; /* Товщина, стиль та колір рамки */
+    background-color: #10fa377d;
+    padding: 3px; /* Відступ всередині рамки */
+}
+.conPz:not(:last-child) {
+    margin-bottom: 3px;
+}
+
+.conLb{
+    border: 2px solid #1287db85; /* Товщина, стиль та колір рамки */
+    background-color: #10d7fa7d;
+    padding: 3px; /* Відступ всередині рамки */
+}
+.conLb:not(:last-child) {
+    margin-bottom: 3px;
+}
+
+
 
 body {
     height: 100%;
@@ -27,7 +84,7 @@ body {
     flex-direction: column;
 
     background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(15px); 
+    backdrop-filter: blur(10px); 
     
 }
 
@@ -73,12 +130,14 @@ main {
 }
 
 h1, h2 {
-    color: #1baaa5;
+    color: #1ebb5a;
+    text-shadow: 1px 2px #000000;
 }
 
 .text {
  text-align: justify;
 }
+
 
 footer {
     background-color: #333;
@@ -86,3 +145,5 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+
