@@ -1,3 +1,5 @@
+
+
 html {
     height: 100%;
     background-image: url(../images/background.jpeg);
@@ -222,6 +224,17 @@ main {
     color: white;
     text-align: center;
     padding: 2px;
+    font-size: 19px;
+}
+
+.pmain:first-child{
+    font-size: 24px;
+}
+
+.section_pmain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .pmain1{

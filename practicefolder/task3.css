@@ -1,0 +1,79 @@
+/* Перше завдання */
+nav > ul :first-child > a{
+    font-weight: bold;
+}
+
+/* Друге завдання */
+a:last-child {
+    color: red;
+}
+
+/* Третє завдання */
+input:disabled {
+    background-color: gray;
+}
+
+/* Четверте завдання */
+div > p {
+    font-weight: 600;
+}
+
+/* П'яте завдання */
+a[href^="https"] {
+    color: green;
+}
+
+/* Шосте завдання */
+  input[type="text"] {
+    border: 1px solid blue;
+}
+  
+/* Сьоме завдання */
+li:last-child {
+    font-size: 24px;
+}
+  
+/* Восьме завдання */
+div p {
+    font-size: 16px;
+}
+
+/* Дев'яте завдання */
+input:checked {
+    background-color: lightblue;
+}
+
+/* Десяте завдання */
+li > a {
+    text-decoration: underline;
+}
+
+/* Одинадцяте завдання */
+li:nth-child(even) {
+    font-weight: bold;
+}
+
+/* Дванадцяте завдання */
+input[type="text"]:not([disabled]) {
+    background-color: gray;
+}
+
+/* Тринадцяте завдання */
+p:first-child {
+    font-size: 24px;
+}
+
+/* Чотирнадцяте завдання */
+.special + li {
+    text-decoration: line-through;
+}
+
+/* П'ятнадцяте завдання */
+p::first-letter {
+    font-size: 36px;
+}
+
+/* Шістнадцяте завдання */
+a::after {
+    content: " (Lorem Ipsum)";
+}
