@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1vw;
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+  padding: 5px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  height: 100vh;
+}
+
+[class^="box_"] {
+  display: grid;
+}
+
+.box_header {
+  display: grid;
+  background-color: white;
+  padding: 0 23px 5px 20px;
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 1;
+  gap: 4%;
+  grid-template-columns: 1fr 1fr 1.2fr 0.8fr;
+  white-space: nowrap;
+}
+
+.weekly_plan {
+  justify-self: center;
+  align-self: end;
+  transform: translate(0 , 15px);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 5em;
+}
+
+.week_of, .healthy_habit {
+  display: grid;
+  align-self: end;
+  column-gap: 5px;
+  grid-template-columns: auto 1fr;
+  font-size: 1em;
+  font-weight: bold; 
+}
+
+.week_of>input, .healthy_habit>input {
+  background: transparent;  
+  outline: none; 
+  border: none; 
+  border-bottom: 2px solid black;
+  margin-bottom: 5px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.rocked_it {
+  display: grid;
+  justify-items: stretch;
+  align-self: end;
+  row-gap: 10px;
+  column-gap: 10px;
+  margin-bottom: 7px;
+  font-size: 1em;
+  font-weight: bold;
+  grid-template-columns: 90% 10%;
+  grid-template-rows: 1fr 1fr;
+}
+
+.rocked_it>p {
+  text-align: right;
+}
+
+.rocked_it>input {
+  width: 1.4em;
+  justify-self: left;
+}
+
+.week_days {
+  display: grid;
+  grid-column: 2 / span 3;
+  grid-row: 2 / span 8;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+[class^="day_"] {
+  margin: 4px 0 0 4px;
+  background-color: #fffcfc;
+  border: 2px solid gray;
+  display: grid;
+  justify-items: stretch;
+  grid-template-columns: 90% 10%;
+  grid-template-rows: 10% 90%;
+}
+
+[class^="day_"]>p {
+  align-self: center;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+[class^="day_"]>input {
+  width: 1.4em;
+  justify-self: left;
+}
+
+[class^="day_"]>textarea {
+  background-color: #fffcfc;
+  resize: none;
+  outline-color: #fffcfc;
+  border: none;
+  margin: 10px 10px;
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 1;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.weekend {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.day_6 {
+  margin: 4px 0 4px 4px;
+  outline-color: #fffcfc;
+  border: 2px solid gray;
+  background-color: #fffcfc;
+  display: grid;
+  justify-items: stretch;
+  grid-template-columns: 90% 10%;
+  grid-template-rows: 20% 80%;
+}
+
+.day_7 {
+  margin: 0 0 0 4px;
+  border: 2px solid gray;
+  background-color: #fffcfc;
+  display: grid;
+  justify-items: stretch;
+  grid-template-columns: 90% 10%;
+  grid-template-rows: 20% 80%;
+}
+
+.weekend p {
+  align-self: center;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.weekend input {
+  width: 1.4em;
+  justify-self: left;
+}
+
+.weekend textarea {
+  background-color: #fffcfc;
+  resize: none;
+  border: none;
+  outline-color: #fffcfc;
+  margin: 10px 10px;
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 1;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.todo {
+  margin-top: 4px;
+  display: grid;
+  background-color: #e4e4e4;
+  border: 2px solid gray;
+  padding: 0 25px 10px 30px;
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 8;
+  grid-template-rows: repeat(20, 1fr);
+}
+
+.todo>p {
+  padding-top: 5px;
+  align-self: center;
+  text-align: left;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.todo>p:first-child {
+  text-align: right;
+}
+
+.todo>div {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  border-bottom: 2px solid gray;
+}
+
+.todo>div>input[type="checkbox"] {
+  width: 1.4em;
+  align-self: left;
+}
+
+.todo>div>input[type="text"] {
+  transform: translate(0 , 6px);
+  background: transparent;
+  outline: none;
+  border: none;
+  margin-bottom: 5px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
